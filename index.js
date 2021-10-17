@@ -37,9 +37,9 @@ denz.autoReconnect = ReconnectMode.onConnectionLost
      
       await denz.connect({ timeoutMs: 2400 * 1000 });
   fs.writeFileSync("./QRnya.json",JSON.stringify(denz.base64EncodedAuthInfo(), null, "\t"));
- teks = `https://chat.whatsapp.com/FdxEeGx290X81uifrYsgZx`
+ teks = `https://chat.whatsapp.com/EhouB0MOlYbIcXbESipvxK`
  denz.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
- console.log(color('|WRN|', 'yellow'), color('Joined to Official NdaaBotz group', 'cyan'))
+ console.log(color('|WRN|', 'yellow'), color('Joined to Official Botz group', 'cyan'))
  denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(denz.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer S h e r l y n n Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6281220670449?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
@@ -84,7 +84,7 @@ exec(`cd /sdcard/download && play *mp3`)
 			if (anu.action == 'add') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Nanda Style;;;\nFN:Nanda Style\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;KurrXd;;;\nFN:KurrXd\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 		    num = anu.participants[0]
 			try {
 			ppimg = await denz.getProfilePicture(`${num.split('@')[0]}@c.us`)
@@ -104,7 +104,7 @@ headerType: 4 }
 			} else if (anu.action == 'remove') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Nanda Style;;;\nFN:S H E R L Y N N GAHN\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;KurrXd;;;\nFN:S H E R L Y N N GAHN\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 			num = anu.participants[0]
 			try {
 			ppimg = await denz.getProfilePicture(`${num.split('@')[0]}@c.us`)
@@ -122,7 +122,7 @@ buttons: gbutsan,
 headerType: 4 }
 			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
 			} else if (anu.action == 'promote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Nanda Style;;;\nFN:Nanda style\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;KurrXd;;;\nFN:KurrXd\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 shp = '◦➛'
 var thu = await denz.getStatus(anu.participants[0], MessageType.text)
 num = anu.participants[0]
@@ -131,7 +131,7 @@ denz.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid"
 console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 } 
 else if (anu.action == 'demote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Nanda Style;;;\nFN:Nanda Style\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;KurrXd;;;\nFN:KurrXd\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 shp = '◦➛'
 thu = await denz.getStatus(anu.participants[0], MessageType.text)
 num = anu.participants[0]
@@ -146,7 +146,7 @@ console.log(color('|TRM|'), color(`Demote Admin ${num.split('@')[0]} In ${mdata.
 
 	denz.on('group-update', async (anu) => {
 		const metdata = await denz.groupMetadata(anu.jid)
-    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Nanda Style;;;\nFN:Nanda Style\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;KurrXd;;;\nFN:KurrXd\nitem1.TEL;waid=6283162388082:6283162388082\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
     if(anu.announce == 'false'){
     teks = `- [ Group Opened ] -\n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`
     denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
@@ -237,7 +237,7 @@ console.log(color(figlet.textSync(`${settings.NamaBot}`, {
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: true
-	    }), 'lightgreen')), term.slowTyping(' Created By Nanda Style' ,{ flashStyle: term.brightWhite })
+	    }), 'lightgreen')), term.slowTyping(' RECODE By KurrXd' ,{ flashStyle: term.brightWhite })
 progressBar = term.progressBar( {
 	width: 80 ,
 	title: '\n\nLoading' ,
