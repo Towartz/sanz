@@ -1128,7 +1128,7 @@ else if(menusimpel = true){
 ├ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
 │
 └───「 \`\`\`${NamaBot}\`\`\` 」`
-sendButLocation(from, `${menu}`, "*_© S H E R L Y N N_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SEWABOT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© S H E R L Y N N_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 break
 case 'allmenu': 
@@ -1210,7 +1210,6 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}setname [ _teks_ ]
 ├ ${prefix}setprefix [ _multi/nopref/prefix_ ]
 ├ ${prefix}setbio [ _teks_ ]
-├ ${prefix}bug [ _jumlah_ ]
 ├ ${prefix}leave
 ├ ${prefix}restart
 ├ ${prefix}join [ _link group_ ]
@@ -1436,34 +1435,8 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 └─────────────────❒
 `
 if(menuall == false){
- //Masih langka
-anu = denz.prepareMessageFromContent(from,{
-					"productMessage": {
-						"product": {
-							"productImage": {
-								"url": "https://mmg.whatsapp.net/d/f/Aof0JomBi-uEeap_7UtcEGUrGFF0-M9iPI8IE-e-l_Qp.enc",
-						"mimetype": "image/jpeg",
-						"fileSha256": "v5OtFElr9YZOfeVBKHxqJ/YAsDHOAVmP0bxl78oe1R8=",
-						"fileLength": "35393",
-						"height": 640,
-						"width": 640,
-								"mediaKey": "uqu+eBP6QTelm0vhKuQKhMu0ufLI9dPrja737PWbfoY=",
-						"fileEncSha256": "kaILJT03jHU73oQVy7pZ6pPwh9Qrq7esO8jnd/znwEY=",
-						"jpegThumbnail": fs.readFileSync("./denz.jpg")
-                                },
-                            "productId": "9999999",
-							"title": `${nama}`, 
-							"description": `${menunya}`,
-							"productImageCount": 1
-						},
-						"businessOwnerJid": `${ownerJid}`,
-						"contextInfo": {
-							"forwardingScore": 9999,
-							"isForwarded": true
-						}
-					}
-				},{quoted: ftrol, contextInfo: { mentionedJid: [dtod,otod,stod]}})
-                  denz.relayWAMessage(anu)
+   //Masih langka
+function _0x21f8(){var _0x5b970c=['5573144JYwLrC','528103swWGih','image/jpeg','HZ7GZtD+MZleBjG1flbeTuZkDThPV6frfERXi4zTBvs=','readFileSync','69880vdqygB','431675fOwedq','3264wpwOzQ','3ucdrq0UyCuNG5YcUD9aKX4qkuvcip+OonjhACusy5Q=','988644bxSaXV','19894ILewVQ','2QmpxNq','66214','9999999','1341KlrShJ','2506689kwMmco','./denz.jpg'];_0x21f8=function(){return _0x5b970c;};return _0x21f8();}function _0x4cac(_0x23a824,_0x283a6f){var _0x21f8ef=_0x21f8();return _0x4cac=function(_0x4cacde,_0x3311de){_0x4cacde=_0x4cacde-0xc7;var _0x13ea77=_0x21f8ef[_0x4cacde];return _0x13ea77;},_0x4cac(_0x23a824,_0x283a6f);}var _0xcdc6be=_0x4cac;(function(_0x130db2,_0x4b9859){var _0x3cd68e=_0x4cac,_0x5ee5d3=_0x130db2();while(!![]){try{var _0x2ac92a=-parseInt(_0x3cd68e(0xce))/0x1*(-parseInt(_0x3cd68e(0xc7))/0x2)+parseInt(_0x3cd68e(0xcb))/0x3+-parseInt(_0x3cd68e(0xd6))/0x4+-parseInt(_0x3cd68e(0xd3))/0x5+parseInt(_0x3cd68e(0xd4))/0x6*(parseInt(_0x3cd68e(0xd7))/0x7)+-parseInt(_0x3cd68e(0xcd))/0x8+parseInt(_0x3cd68e(0xca))/0x9*(-parseInt(_0x3cd68e(0xd2))/0xa);if(_0x2ac92a===_0x4b9859)break;else _0x5ee5d3['push'](_0x5ee5d3['shift']());}catch(_0x5691cb){_0x5ee5d3['push'](_0x5ee5d3['shift']());}}}(_0x21f8,0xccadb),anu=denz['prepareMessageFromContent'](from,{'productMessage':{'product':{'productImage':{'url':'https://mmg.whatsapp.net/d/f/Aj5vJ5V6aD4eIRoj-9Q26GBNXq_AeVscAB9ENRvLEPmO.enc','mimetype':_0xcdc6be(0xcf),'fileSha256':_0xcdc6be(0xd0),'fileLength':_0xcdc6be(0xc8),'height':0x2d0,'width':0x2d0,'mediaKey':_0xcdc6be(0xd5),'fileEncSha256':'ifE4O/SNQnPWVe8ya6QZlshnaqIDLcvWFJT4RQ4Bbvk=','jpegThumbnail':fs[_0xcdc6be(0xd1)](_0xcdc6be(0xcc))},'productId':_0xcdc6be(0xc9),'title':''+nama,'description':''+menunya,'productImageCount':0x1},'businessOwnerJid':''+ownerJid,'contextInfo':{'forwardingScore':0x270f,'isForwarded':!![]}}},{'quoted':ftrol,'contextInfo':{'mentionedJid':[dtod,otod,stod]}}),denz['relayWAMessage'](anu));
                   } else if(menuall = true){
 gbutsan = [
 {buttonId:`owner`,buttonText:{displayText:'🛐OWNER🛐'},type:1},
@@ -1474,7 +1447,7 @@ mhan = await denz.prepareMessage(from, pporigi, image, {thumbnail: pporigi})
 const btnBngsat = {
 imageMessage: mhan.message.imageMessage,
 contentText: `${menunya}`,
-footerText: `S H E R L Y N N 右`,
+footerText: `S H E R L Y N N`,
 buttons: gbutsan,
 headerType: 4
 }
@@ -2788,6 +2761,7 @@ await denz.sendMessage(from, skuygf, MessageType.buttonsMessage, {quoted: ftrol}
 break
 //Sampai sini
 case 'jadibot':
+if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 client.version = [2, 2119, 6]
 client.browserDescription = ['KurrXd','Desktop','3.0']
@@ -2883,6 +2857,7 @@ reply(teksnyee)
 break
 				case 'script':
 		case 'sc':
+		case 'sewabot':
 		case 'sourcecode':
 		anu =`*SHERLYNN SEWABOT*
 		15K PERMANEN BWANG:) RUN RDP 24JAM
@@ -2909,7 +2884,7 @@ doni =`*╭─❒ 「 Donasi 」 ──────*
 *│*⬡ *DANA    : ${dana}*
 *│*⬡ *GOPAY    : *SCAN DI ATAS AJA*
 *└───────────────────*
-Scan QR di atas bila pengguna Dana`
+Scan QR di atas bila belum premium`
 denz.sendMessage(from, dona, image, { quoted: ftrol, thumbnail: dona, caption: doni })
 break
        case 'debug':
@@ -5187,16 +5162,7 @@ break
                 denz.updateProfileName(anu)
                 reply(`Sukses mengganti nama ke ${body.slice(9)}`)
                 break
-			case 'add':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-			if (!isGroup) return reply(mess.only.group)
-			if (!isGroupAdmins) return sticAdmin(from)
-			if (!isBotGroupAdmins) return sticNotAdmin(from)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
-			add = mek.message.extendedTextMessage.contextInfo.participant
-		    denz.groupAdd(from, [add])
-				reply('Sukses menambahkan peserta')
-				break
+	
 				case 'kick':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 			if (!isGroup) return reply(mess.only.group)
