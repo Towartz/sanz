@@ -1,7 +1,7 @@
 {
-  "name": "S H E R L Y N N",
+  "name": "TWC",
   "version": "0.0.1",
-  "description": "KurrXd",
+  "description": "Rias",
   "main": "node index",
   "directories": {
     "lib": "lib"
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "KurrXd",
+  "author": "Rias",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
